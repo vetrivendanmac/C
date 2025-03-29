@@ -11,7 +11,7 @@ int main(){
     printf("\nbegin typing to input\n");
     while( (c=getchar()) != EOF){
         if(c==' ' || c=='\n' || c=='\t')    spaces++;
-        if (c >= '0' && c <= '9')   ++intArray[c-'0'];
+        else if (c >= '0' && c <= '9')   ++intArray[c-'0'];
         else    otherChars++;
     }
     // print all the values measured

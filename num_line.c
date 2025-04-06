@@ -11,7 +11,7 @@ int main(){
     while ((len=getLine(temp))>1)
         printf("\nStart typing ......\n");
         if (lenLargestLine<len){
-            copy(temp, largest, len);
+            copy(largest, temp, len);
             lenLargestLine=len;
         }
     
